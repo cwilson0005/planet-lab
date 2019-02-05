@@ -6,6 +6,7 @@ const DisplayView = require('./views/display_view.js');
 document.addEventListener('DOMContentLoaded', () => {
   const planetsDataModel = new SolarSystem(planetsData);
   planetsDataModel.bindEvents();
+  
   const planetNav = document.querySelector('.planets-menu');
   const menu = new MenuView(planetNav);
   menu.bindEvents();
